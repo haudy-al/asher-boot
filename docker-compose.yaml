@@ -5,5 +5,5 @@ services:
     build:
         context: ./
         dockerfile: Dockerfile
-    container_name: discord-bot
+    container_name: asher-boot
     restart: always

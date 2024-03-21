@@ -12,7 +12,7 @@ module.exports = {
         }
 
         const queue = useQueue(interaction.guild.id)
-        if (typeof (queue) != 'undefined') {
+        if (queue && queue.currentTrack) { // Periksa apakah queue memiliki nilai dan currentTrack tidak null
             const trimString = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
             return void interaction.reply({
                 embeds: [

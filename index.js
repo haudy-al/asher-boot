@@ -55,11 +55,11 @@ player.events.on('disconnect', queue => {
 });
 
 player.events.on('emptyChannel', queue => {
-    queue.metadata.channel.send('❌ | Nobody is in the voice channel, leaving...');
+    queue.metadata.channel.send('❌ | Ga ada orang di channel, Aku pergi ...');
 });
 
 player.events.on('emptyQueue', queue => {
-    queue.metadata.channel.send('✅ | Queue finished!');
+    queue.metadata.channel.send('✅ | Antrian Selesai!');
     // Delete queue and disconnect from voice channel
     queue.delete();
 });
